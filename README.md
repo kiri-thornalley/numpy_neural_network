@@ -15,7 +15,7 @@ This project isn't just about building a neural network. It's about building und
 
 To help with this, within the notebook there are a number of blocks with the heading: "📚 Side Quest:" These are deliberate deep dives. Sometimes they ask "Why does this work?", other times they explore alternatives, visualisations, or detours that help cement understanding. They’re not required to follow the code, but they document the thought process, debugging, and explorations that went into building the model.
 
-If you want the just the code version, that’s in the src/ folder. But if you want to understand how a neural network really works, follow the notebook(s) — side quests and all.
+If you want the just the code version, that’s in the neural_network folder. But if you want to understand how a neural network really works, follow the notebook — side quests and all.
 
 ## Why literate programming? 
 Literate programming, coined by Donld Knuth, is the idea that "code should be written for humans first, and computers second". By interweaving explanations and mathematics with implementation, I'm treating this neural network not just as code, but as a form of interactive scientific reasoning. 
@@ -93,12 +93,17 @@ Hyperparameter tuning using optima improved accuracy on the training set from 10
 Training curves:
 - Loss vs Epoch: Clear downward trend, dropping rapidly at first and loss eventually slowing
 - Accuracy vs Epoch: Rapid improvement in the first 20 epochs. Beyond epoch 80, limited improvement in loss.
+<img width="541" height="500" alt="download" src="https://github.com/user-attachments/assets/b3666d30-d684-490e-a493-07bf7256a373" />
 
 Confusion Matrix: 
 - Model performs better on some digits than others, performs strongly on the digits that are visually distinct e.g., 1. 
 - Is more prone to misclassification where two or more digits look similar - 8 and 3.
 
+
+<img width="541" height="556" alt="download" src="https://github.com/user-attachments/assets/0819e34d-0a28-4929-bc3c-7b9634eb6821" />
+
 **Limitations of the model**
+
 This implementation does not use GPU acceleration or advanced optimization techniques like Adam. It’s designed for interpretability, not performance.
 
 ## Comparison with PyTorch
